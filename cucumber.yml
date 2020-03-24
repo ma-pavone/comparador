@@ -1,0 +1,1 @@
+default: --retry 1 --no-source --color --expand -f pretty -f json_pretty --out results/report.json -f html -o results/report.html --verbose
