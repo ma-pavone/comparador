@@ -170,11 +170,11 @@ def ss_capture(nome_arquivo, resultado)
 end
 
 class Busca < SitePrism::Page
-    # set_url "http://www.casasbahia.com.br/busca?q=Iphone"
+    set_url "http://www.casasbahia.com.br/busca?q=Iphone"
     
-    element :tabela_busca, 'div .nm-search-results-container'
+    element :tabela_busca, 'div.nm-search-results-container'
     element :botao_comparar, 'div[class="nm-btn-compare"]'
-    elements :resultados, 'fieldset.nm-compare-product > input[id*="comparator-product-"]'
-    elements :resultadoss, 'label[for*="comparator-product-"]', text: 'Comparar produtos'
-    
+    elements :resultados, 'label[for*="comparator-product-"]', text: 'Comparar produtos'
+    element :tabela_comparacao, 'div .corpoComparacao'
+    elements :atributos, 'tr.atributos'
 end

@@ -31,7 +31,7 @@ Capybara::Screenshot.prune_strategy = :keep_last_run
 
 Capybara.configure do |config|
     config.default_driver = :site_prism 
-    config.javascript_driver = :selenium
+    config.javascript_driver = :site_prism
     config.default_max_wait_time = 9
     config.app_host = 'http://www.casasbahia.com.br/'
 
